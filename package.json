@@ -1,5 +1,5 @@
 {
-  "name": "basicnode-ts-app",
+  "name": "rext",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn --exit-child src/server.ts"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "eslint": "^7.27.0",
@@ -23,6 +24,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
   }
 }
