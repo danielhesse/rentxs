@@ -1,5 +1,5 @@
 import { Category } from '../models/Category';
-import { CategoriesRepository } from '../repositories/CategoriesRepository';
+import { ICategoriesRepository } from '../repositories/ICategoriesRepository';
 
 interface IRequest {
   name: string;
@@ -7,7 +7,7 @@ interface IRequest {
 }
 
 class CreateCategoryService {
-  constructor(private readonly categoriesRepository: CategoriesRepository) {
+  constructor(private readonly categoriesRepository: ICategoriesRepository) {
     // Constructor Content
   }
 
